@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+.header{
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+    background-color: black;
+    color: white;
+    letter-spacing: 8px;
+}
+.home-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    color: white;
+}
+.home-button a {
+    color: #fff;
+    text-decoration: none;
+}
+.background{
+    width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(images/las\ vegas5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.flex-container {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: auto;
+    justify-content: space-around;
+    border-radius: 20px; 
+}
+.flex-box{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(orange, red);
+    font-size: 25px;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 20px;
+    margin: 10px;   
+}
+.rain{
+    position: relative;
+    display: flex;
+    z-index: 1;
+    padding: 0 20px;
+}
+.rain span
+{
+    position: relative;
+    bottom: 10px;
+    width: 15px;
+    height: 15px;
+    background: gold;
+    border: solid 2px black;
+    margin: 0 auto;
+    border-radius: 50%;
+    animation: animate 5s linear infinite ;
+    animation-duration: calc(50s / var(--i));
+    transform-origin: bottom;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(0) scale(1);
+    }
+    70%
+    {
+        transform: translateY(900px) scale(1);
+    }
+    100%
+    {
+        transform: translateY(900px) scale(1);
+    }
+}
